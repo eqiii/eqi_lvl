@@ -12,6 +12,15 @@ Route::put('/sensor/{sensor}', [SensorController::class, 'update'])->name('senso
 Route::delete('/sensor/{sensor}', [SensorController::class, 'destroy'])->name('sensor.destroy');
 
 
+use App\Http\Controllers\DeviceController;
+
+Route::get('/device', [DeviceController::class, 'index'])->name('device.index');
+Route::post('/device', [DeviceController::class, 'store'])->name('device.store');
+Route::delete('/device/{device}', [DeviceController::class, 'destroy'])->name('device.destroy');
+Route::put('/device/{device}', [DeviceController::class, 'update'])->name('device.update');
+
+Route::get('/device/{device}/edit', [DeviceController::class, 'edit'])->name('device.edit');
+Route::put('/device/{device}', [DeviceController::class, 'update'])->name('device.update');
 // Route::get('/', function () {
 //     return view('welcome');
 // });

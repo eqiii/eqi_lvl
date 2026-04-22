@@ -79,7 +79,7 @@
 </head>
 
 <body> <!-- Navbar -->
-    <div class="navbar"> <a href="#">Sensor</a> <a href="#">Home</a> </div> <!-- Content -->
+    <div class="navbar"> <a href="#">Sensor</a> <a href="#">Home</a> <a href="{{ route('device.index') }}">Device</a> </div> <!-- Content -->
     <div class="container">
         <div class="header">
             <h1>Data Sensor</h1> <a href="{{ route('sensor.create') }}" class="btn">Tambah Data Sensor</a>
