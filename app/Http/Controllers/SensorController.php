@@ -20,6 +20,12 @@ class SensorController extends Controller
 
   public function store(Request $request)
   {
+    $request->validate([
+      'nama_sensor' => 'required',
+      'data_sensor' => 'required'
+    ]);
+
+
     Sensor::create($request->all());
     return redirect()->route('sensor.index');
   }

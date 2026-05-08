@@ -24,3 +24,11 @@ Route::put('/device/{device}', [DeviceController::class, 'update'])->name('devic
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+
+Route::get('/', function () {
+    return view('home');
+})->name('home');
+
+Route::get('/sensor', [SensorController::class, 'index'])->name('sensor.index');
+
+Route::get('/device', [DeviceController::class, 'index'])->name('device.index');

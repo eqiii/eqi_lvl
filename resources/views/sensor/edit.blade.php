@@ -84,11 +84,7 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <div class="navbar">
-    <a href="{{ route('sensor.index') }}">Sensor</a>
-    <a href="#">Home</a>
-  </div>
+ @include('sensor.partials.nav') <!-- Content -->
 
   <!-- Content -->
   <div class="container">

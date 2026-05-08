@@ -85,11 +85,7 @@ input {
 <body>
 
 <!-- Navbar -->
-<div class="navbar">
-  <a href="#">Sensor</a>
-  <a href="{{ route('sensor.index') }}">Home</a>
-  <a href="{{ route('device.index') }}">Device</a>
-</div>
+@include('sensor.partials.nav') <!-- Content -->
 
 <!-- Content -->
 <div class="container">
